@@ -261,10 +261,8 @@ device = torch.device("cuda")
 model_loaded = Autoencoder_path(mode="k")
 model_loaded.to(device)
 
-#load_check = torch.load('/home/vladislav/l4casadi/examples/TransPath/case3_1000maps_ur5_husky_v3.pth')
-# load_check = torch.load('/home/vladislav/l4casadi/examples/TransPath/case4_1000maps_husky_sum.pth')
-# load_check = torch.load('/home/vladislav/l4casadi/examples/TransPath/case4_1000maps_husky_max.pth')
-load_check = torch.load("/home/vladislav/test_npfield/1000maps_zones_husky.pth")
+
+load_check = torch.load("1000maps_zones_husky.pth")
 
 model_dict = model_loaded.state_dict()
 pretrained_dict = {k: v for k, v in load_check.items() if k in model_dict}
@@ -276,9 +274,8 @@ model_loaded.eval();
 acados_solver = create_solver.create_solver()
 
 ############## Load Datasets to test the created solver ###########
-data_1_map = pickle.load( open( "/home/vladislav/l4casadi/examples/TransPath/data.pkl", "rb" ))
-data_sub_maps_1000 = pickle.load( open( "/home/vladislav/Machine_Learning/Neural_Potential_Field_Article/dataset_1000_maps_husky/dataset_sub_maps.pkl", "rb" ))
-d_footprint = pickle.load( open( "/home/vladislav/Machine_Learning/Neural_Potential_Field_Article/generate dataset/dataset_zones/collect_datasets/dataset_footprints.pkl", "rb" ))
+data_sub_maps_1000 = pickle.load( open( "dataset_sub_maps.pkl", "rb" ))
+d_footprint = pickle.load( open( "dataset_footprints.pkl", "rb" ))
 map = data_sub_maps_1000['sub_maps']
 footprint = d_footprint['footprint_husky']
 
