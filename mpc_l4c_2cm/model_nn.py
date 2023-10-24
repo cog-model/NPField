@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 import sys
-sys.path.append('/home/vladislav/test_npfield/TransPath')
 from math import floor 
 from modules.encoder import Encoder
 from modules.decoder import Decoder
