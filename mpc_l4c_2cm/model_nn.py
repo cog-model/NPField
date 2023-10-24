@@ -305,15 +305,15 @@ if __name__ == "__main__":
     model_loaded = Autoencoder_path(mode="k")
     model_loaded.to(device)
 
-    load_check = torch.load("/home/vladislav/test_npfield/1000maps_zones_husky.pth")
+    load_check = torch.load("1000maps_zones_husky.pth")
     # model_dict = model_loaded.state_dict()
     # pretrained_dict = {k: v for k, v in load_check.items() if k in model_dict}
     # model_dict.update(pretrained_dict) 
     model_loaded.load_state_dict(load_check)
     model_loaded.eval();
 
-    data_sub_maps_1000 = pickle.load( open( "/home/vladislav/Machine_Learning/Neural_Potential_Field_Article/dataset_1000_maps_husky/dataset_sub_maps.pkl", "rb" ))
-    data_footprints = pickle.load( open( "/home/vladislav/Machine_Learning/Neural_Potential_Field_Article/generate dataset/dataset_zones/collect_datasets/dataset_footprints.pkl", "rb" ))
+    data_sub_maps_1000 = pickle.load( open( "dataset_sub_maps.pkl", "rb" ))
+    data_footprints = pickle.load( open( "dataset_footprints.pkl", "rb" ))
 
     num_map = 0
 
