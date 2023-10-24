@@ -13,10 +13,8 @@ def create_solver():
     model_loaded.to(device)
 
 
-    # load_check = torch.load('/home/vladislav/l4casadi/examples/TransPath/case3_1000maps_ur5_husky_v3.pth')
-    # load_check = torch.load('/home/vladislav/l4casadi/examples/TransPath/case4_1000maps_husky_sum.pth')
-    # load_check = torch.load('/home/vladislav/l4casadi/examples/TransPath/case4_1000maps_husky_max.pth')
-    load_check = torch.load("/home/vladislav/test_npfield/1000maps_zones_husky.pth")
+
+    load_check = torch.load("1000maps_zones_husky.pth")
     model_dict = model_loaded.state_dict()
     pretrained_dict = {k: v for k, v in load_check.items() if k in model_dict}
     model_dict.update(pretrained_dict) 
