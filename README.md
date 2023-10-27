@@ -14,6 +14,6 @@ For the problem of local path planning with Model Predictive Control (MPC) algor
 - Use test_solver.py for testing the results of algorithm
 
 ### Demonstration video:
-The code is tested on Ubuntu 20.04. Video for testing the proposed algorithm on Unmanned Ground Vehicle Husky:
+The code is tested on Ubuntu 20.04. Video for testing the proposed algorithm on Unmanned Ground Vehicle Husky with the created solver and ROS is presented [here](https://www.youtube.com/watch?v=KL3bfvUwGqs).
 
-https://www.youtube.com/watch?v=KL3bfvUwGqs
+
