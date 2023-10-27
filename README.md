@@ -3,7 +3,7 @@
 ### Abstarct
 For the problem of local path planning with Model Predictive Control (MPC) algorithm, a neural network model that returns a differentiable collision cost based on robot pose, obstacle map, global path, and robot footprint is suggested. The proposed approach provides path for different robots footprints, without needing detection obstacles stage, and with safe distance from obstacles.
 
-## Prerequisites
+### Prerequisites
 - Python3.9 or above, Pytorch, cuda and all other libraries for Acados and L4CasADi
 - Install [Acados](https://github.com/acados/acados) and make sure that it works by testing examples in exampls/acados_python
 - Install [L4CasADi](https://github.com/Tim-Salzmann/l4casadi)
