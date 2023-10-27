@@ -11,6 +11,7 @@ For the problem of local path planning with Model Predictive Control (MPC) algor
 - Install [L4CasADi](https://github.com/Tim-Salzmann/l4casadi)
 
 ### Steps of running the algorithm:
+The algorithm is written for two resolutions of maps (2cm , 10cm). For anyone of those maps, the general steps of using this method are:
 - Training the neural model written in file model_nn.py
 - Runing the file create_solver.py will create slover for MPC local planning problem for a differential-drive mobile robot
 - Use test_solver.py for testing the results of algorithm
