@@ -1,0 +1,6 @@
+<launch>
+  <node name="mpc_l4c_planner_10cm" pkg="mpc_l4c_planner_10cm" type="mpc_l4c_planner_10cm" output="screen" required="true">
+  </node>
+
+
+</launch>
