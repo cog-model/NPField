@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mpc_l4c_planner_10cm</name>
+  <version>0.0.1</version>
+  <description>ROS node for trajectory optimization using Acados solver</description>
+
+  <maintainer email="alkhaddad.m@phystech.edu">Muhammad Alhaddad</maintainer>
+
+
+  <license>TODO</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>simulation</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>simulation</build_export_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>simulation</exec_depend>
+
+
+</package>
